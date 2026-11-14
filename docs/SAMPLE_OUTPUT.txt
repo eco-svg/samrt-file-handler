@@ -1,0 +1,397 @@
+                               *
+                              ***
+                             *****
+                            *******
+
+================================================================
+            SMART FILE ORGANIZER & DUPLICATE FINDER
+================================================================
+
+----------------------------------------------------------------
+ Folder: (none scanned yet)
+----------------------------------------------------------------
+  1. Scan a folder
+  2. Show file list
+  3. Statistics report
+  4. Search file by name
+  5. Exclude a file from the list
+  6. Find duplicate files
+  7. Organize files by type
+  8. Undo last move
+  9. Folder tree (recursion)
+ 10. Create demo folder for testing
+  0. Exit
+----------------------------------------------------------------
+Enter your choice: 10
+16 sample files created in /home/eco-svg/warehouse2/iop/demo_messy
+Now choose option 1 and press Enter to scan it.
+
+----------------------------------------------------------------
+ Folder: (none scanned yet)
+----------------------------------------------------------------
+  1. Scan a folder
+  2. Show file list
+  3. Statistics report
+  4. Search file by name
+  5. Exclude a file from the list
+  6. Find duplicate files
+  7. Organize files by type
+  8. Undo last move
+  9. Folder tree (recursion)
+ 10. Create demo folder for testing
+  0. Exit
+----------------------------------------------------------------
+Enter your choice: 1
+Folder path (Enter = demo_messy): 
+Include sub-folders? (y/n): y
+Scan complete: 16 files found.
+
+----------------------------------------------------------------
+ Folder: /home/eco-svg/warehouse2/iop/demo_messy   [16 files]
+----------------------------------------------------------------
+  1. Scan a folder
+  2. Show file list
+  3. Statistics report
+  4. Search file by name
+  5. Exclude a file from the list
+  6. Find duplicate files
+  7. Organize files by type
+  8. Undo last move
+  9. Folder tree (recursion)
+ 10. Create demo folder for testing
+  0. Exit
+----------------------------------------------------------------
+Enter your choice: 2
+
+================================================================
+                           FILE LIST
+================================================================
+ No.  Name                        Size       Category   Flags
+----------------------------------------------------------------
+ 1    report.txt                  46 B       Documents  rw--
+ 2    report_copy.txt             46 B       Documents  rw--
+ 3    notes.txt                   31 B       Documents  rw--
+ 4    marks.csv                   27 B       Documents  rw--
+ 5    photo.jpg                   46 B       Images     rw--
+ 6    photo (1).jpg               46 B       Images     rw--
+ 7    holiday.png                 30 B       Images     rw--
+ 8    song.mp3                    46 B       Music      rw--
+ 9    movie.mp4                   37 B       Videos     rw--
+ 10   backup.zip                  30 B       Archives   rw--
+ 11   Hello.java                  16 B       Code       rw--
+ 12   script.py                   15 B       Code       rw--
+ 13   README                      28 B       Others     rw--
+ 14   report_backup.txt           46 B       Documents  rw--
+ 15   song.mp3                    46 B       Music      rw--
+ 16   todo.txt                    27 B       Documents  rw--
+----------------------------------------------------------------
+Flags: r = readable, w = writable, x = executable, B = 1 MB or bigger
+
+----------------------------------------------------------------
+ Folder: /home/eco-svg/warehouse2/iop/demo_messy   [16 files]
+----------------------------------------------------------------
+  1. Scan a folder
+  2. Show file list
+  3. Statistics report
+  4. Search file by name
+  5. Exclude a file from the list
+  6. Find duplicate files
+  7. Organize files by type
+  8. Undo last move
+  9. Folder tree (recursion)
+ 10. Create demo folder for testing
+  0. Exit
+----------------------------------------------------------------
+Enter your choice: 3
+
+================================================================
+                       STATISTICS REPORT
+================================================================
+Total files  : 16
+Total size   : 563 B
+Average size : 35 B
+
+Files per category:
+  Images     ###############                  3   18%  122 B
+  Documents  ##############################   6   37%  223 B
+  Videos     #####                            1    6%  37 B
+  Music      ##########                       2   12%  92 B
+  Archives   #####                            1    6%  30 B
+  Code       ##########                       2   12%  31 B
+  Others     #####                            1    6%  28 B
+
+Largest files:
+  * * * 
+  * * 
+  * 
+  1. report.txt                    46 B
+  2. report_copy.txt               46 B
+  3. photo.jpg                     46 B
+  4. photo (1).jpg                 46 B
+  5. song.mp3                      46 B
+
+Pairs to check for duplicates (worst case):
+  1 + 2 + ... + 15 = 120   formula n(n-1)/2 = 120
+
+----------------------------------------------------------------
+ Folder: /home/eco-svg/warehouse2/iop/demo_messy   [16 files]
+----------------------------------------------------------------
+  1. Scan a folder
+  2. Show file list
+  3. Statistics report
+  4. Search file by name
+  5. Exclude a file from the list
+  6. Find duplicate files
+  7. Organize files by type
+  8. Undo last move
+  9. Folder tree (recursion)
+ 10. Create demo folder for testing
+  0. Exit
+----------------------------------------------------------------
+Enter your choice: 4
+Enter part of the file name: song
+2 match(es):
+ No.  Name                        Size       Category   Flags
+----------------------------------------------------------------
+ 8    song.mp3                    46 B       Music      rw--
+ 15   song.mp3                    46 B       Music      rw--
+
+----------------------------------------------------------------
+ Folder: /home/eco-svg/warehouse2/iop/demo_messy   [16 files]
+----------------------------------------------------------------
+  1. Scan a folder
+  2. Show file list
+  3. Statistics report
+  4. Search file by name
+  5. Exclude a file from the list
+  6. Find duplicate files
+  7. Organize files by type
+  8. Undo last move
+  9. Folder tree (recursion)
+ 10. Create demo folder for testing
+  0. Exit
+----------------------------------------------------------------
+Enter your choice: 9
+
+================================================================
+                          FOLDER TREE
+================================================================
+[demo_messy]
++-- Hello.java
++-- README
++-- backup.zip
++-- holiday.png
++-- marks.csv
++-- movie.mp4
++-- notes.txt
++-- [old]
+|   +-- report_backup.txt
+|   +-- song.mp3
+|   +-- todo.txt
++-- photo (1).jpg
++-- photo.jpg
++-- report.txt
++-- report_copy.txt
++-- script.py
++-- song.mp3
+
+Counting every file in every sub-folder:
+  Recursive method : 16 files in 431 microseconds
+  Iterative method : 16 files in 457 microseconds
+
+----------------------------------------------------------------
+ Folder: /home/eco-svg/warehouse2/iop/demo_messy   [16 files]
+----------------------------------------------------------------
+  1. Scan a folder
+  2. Show file list
+  3. Statistics report
+  4. Search file by name
+  5. Exclude a file from the list
+  6. Find duplicate files
+  7. Organize files by type
+  8. Undo last move
+  9. Folder tree (recursion)
+ 10. Create demo folder for testing
+  0. Exit
+----------------------------------------------------------------
+Enter your choice: 6
+
+================================================================
+                        DUPLICATE FILES
+================================================================
+
+Group 1  |  46 B each  |  hash 4b58218c927eb0ee
+   [KEEP] report.txt
+   [COPY] report_copy.txt
+   [COPY] old/report_backup.txt
+
+Group 2  |  46 B each  |  hash 0a7785d5da3c8a23
+   [KEEP] photo.jpg
+   [COPY] photo (1).jpg
+
+Group 3  |  46 B each  |  hash 6c72293f1a3998cb
+   [KEEP] song.mp3
+   [COPY] old/song.mp3
+
+----------------------------------------------------------------
+3 duplicate group(s), 78 pairs checked.
+Space wasted by extra copies: 184 B
+Move the [COPY] files into _Duplicates? (y/n): y
+4 file(s) moved. Nothing was deleted; use option 8 to undo.
+
+----------------------------------------------------------------
+ Folder: /home/eco-svg/warehouse2/iop/demo_messy   [12 files]
+----------------------------------------------------------------
+  1. Scan a folder
+  2. Show file list
+  3. Statistics report
+  4. Search file by name
+  5. Exclude a file from the list
+  6. Find duplicate files
+  7. Organize files by type
+  8. Undo last move
+  9. Folder tree (recursion)
+ 10. Create demo folder for testing
+  0. Exit
+----------------------------------------------------------------
+Enter your choice: 7
+
+================================================================
+                        ORGANIZE BY TYPE
+================================================================
+Preview:
+  report.txt                           ->  Documents/
+  notes.txt                            ->  Documents/
+  marks.csv                            ->  Documents/
+  photo.jpg                            ->  Images/
+  holiday.png                          ->  Images/
+  song.mp3                             ->  Music/
+  movie.mp4                            ->  Videos/
+  backup.zip                           ->  Archives/
+  Hello.java                           ->  Code/
+  script.py                            ->  Code/
+  README                               ->  Others/
+  old/todo.txt                         ->  Documents/
+
+Move these 12 file(s)? (y/n): y
+12 of 12 file(s) moved. Use option 8 to undo.
+
+----------------------------------------------------------------
+ Folder: /home/eco-svg/warehouse2/iop/demo_messy   [12 files]
+----------------------------------------------------------------
+  1. Scan a folder
+  2. Show file list
+  3. Statistics report
+  4. Search file by name
+  5. Exclude a file from the list
+  6. Find duplicate files
+  7. Organize files by type
+  8. Undo last move
+  9. Folder tree (recursion)
+ 10. Create demo folder for testing
+  0. Exit
+----------------------------------------------------------------
+Enter your choice: 9
+
+================================================================
+                          FOLDER TREE
+================================================================
+[demo_messy]
++-- [Archives]
+|   +-- backup.zip
++-- [Code]
+|   +-- Hello.java
+|   +-- script.py
++-- [Documents]
+|   +-- marks.csv
+|   +-- notes.txt
+|   +-- report.txt
+|   +-- todo.txt
++-- [Images]
+|   +-- holiday.png
+|   +-- photo.jpg
++-- [Music]
+|   +-- song.mp3
++-- [Others]
+|   +-- README
++-- [Videos]
+|   +-- movie.mp4
++-- [old]
+
+Counting every file in every sub-folder:
+  Recursive method : 12 files in 1284 microseconds
+  Iterative method : 12 files in 1158 microseconds
+
+----------------------------------------------------------------
+ Folder: /home/eco-svg/warehouse2/iop/demo_messy   [12 files]
+----------------------------------------------------------------
+  1. Scan a folder
+  2. Show file list
+  3. Statistics report
+  4. Search file by name
+  5. Exclude a file from the list
+  6. Find duplicate files
+  7. Organize files by type
+  8. Undo last move
+  9. Folder tree (recursion)
+ 10. Create demo folder for testing
+  0. Exit
+----------------------------------------------------------------
+Enter your choice: 8
+Last moves:
+  1. report.txt  ->  Documents/report.txt
+  2. notes.txt  ->  Documents/notes.txt
+  3. marks.csv  ->  Documents/marks.csv
+  4. photo.jpg  ->  Images/photo.jpg
+  5. holiday.png  ->  Images/holiday.png
+  6. song.mp3  ->  Music/song.mp3
+  7. movie.mp4  ->  Videos/movie.mp4
+  8. backup.zip  ->  Archives/backup.zip
+  9. Hello.java  ->  Code/Hello.java
+  10. script.py  ->  Code/script.py
+  11. README  ->  Others/README
+  12. todo.txt  ->  Documents/todo.txt
+Put these files back? (y/n): y
+12 file(s) restored.
+
+----------------------------------------------------------------
+ Folder: /home/eco-svg/warehouse2/iop/demo_messy   [12 files]
+----------------------------------------------------------------
+  1. Scan a folder
+  2. Show file list
+  3. Statistics report
+  4. Search file by name
+  5. Exclude a file from the list
+  6. Find duplicate files
+  7. Organize files by type
+  8. Undo last move
+  9. Folder tree (recursion)
+ 10. Create demo folder for testing
+  0. Exit
+----------------------------------------------------------------
+Enter your choice: abc
+Invalid choice. Please enter a number from 0 to 10.
+
+----------------------------------------------------------------
+ Folder: /home/eco-svg/warehouse2/iop/demo_messy   [12 files]
+----------------------------------------------------------------
+  1. Scan a folder
+  2. Show file list
+  3. Statistics report
+  4. Search file by name
+  5. Exclude a file from the list
+  6. Find duplicate files
+  7. Organize files by type
+  8. Undo last move
+  9. Folder tree (recursion)
+ 10. Create demo folder for testing
+  0. Exit
+----------------------------------------------------------------
+Enter your choice: 0
+
+                               *
+                              ***
+                             *****
+                              ***
+                               *
+Goodbye!
